@@ -17,7 +17,7 @@ import (
 	"github.com/bepass-org/warp-plus/wiresocks"
 )
 
-const connTestEndpoint = "http://1.1.1.1/cdn-cgi/trace"
+const connTestEndpoint = "http://facebook.com"
 
 func usermodeTunTest(ctx context.Context, l *slog.Logger, tnet *netstack.Net) error {
 	ctx, cancel := context.WithDeadline(ctx, time.Now().Add(5*time.Second))
